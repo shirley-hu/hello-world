@@ -20,8 +20,8 @@ export PATH="/Users/username/anaconda/bin:$PATH"
 2）成功输入后，再输入以下代码，确保以后每次启动都能使用conda命令。
 source ~/.zshrc
 Bash命令稍有不同，可自行搜索。
-（版权声明：本文为CSDN博主「Ericchen0804」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/Ericchen0804/article/details/79824772）
+版权声明：本文为CSDN博主「Ericchen0804」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/Ericchen0804/article/details/79824772
 
 ### 5. ERROR conda.core.link:_execute_actions(337):
 An error occurred while installing package 'defaults::tqdm-4.39.0-py_0'.
@@ -35,3 +35,16 @@ conda update conda
 before doing any other upgrade/install operations
 3) Run command :
 conda config --add pinned_packages defaults::conda
+
+### 6. 使用国内的镜像网站：
+http://pypi.doubanio.com/simple/
+大家可以打开看一下该网站，几乎包含所有的常见包，当然了，大家可以按照字母顺序找一下里面是否包含自己即将要安装的包，一般来说是有的。
+
+对应的命令行就是
+pip install 安装包名字  -i http://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com
+对应到我们这里要安装tensorflow便是：
+pip install tensorflow  -i http://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com
+
+版权声明：本文为CSDN博主「weixin_42001089」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_42001089/article/details/84403842
+
