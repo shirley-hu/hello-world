@@ -1,14 +1,16 @@
-1. 解决"'pip' 不是内部或外部命令，也不是可运行的程序或批处理文件"
+### 1. 报错"'pip' 不是内部或外部命令，也不是可运行的程序或批处理文件"
 
 添加至环境变量 C:\Users\jennifer.zheng\AppData\Local\Continuum\anaconda3\Scripts
 
 C:\Users\jennifer.zheng\AppData\Local\Continuum\anaconda3\Library\bin
 
-2. 环境变量配置内容。在Path后面追加一下内容(Path： 不要复制进去)
+### 2. 环境变量配置内容。在Path后面追加以下内容
 
-Path:     ;C:\python;C:\Python\Scripts
+Path:     ;C:\python;C:\Python\Scripts     (Path： 不要复制进去)
 
-3. Spyder用conda 来进行安装，不要用pip 来安装。在已经安装了anaconda的情况下，pip安装有可能会损坏原文件。
+### 3. 用conda安装Spyder
+
+不要用pip安装。在已经安装了anaconda的情况下，pip安装有可能会损坏原文件。
 
 打开Terminal，输入代码：
 
@@ -16,7 +18,7 @@ conda update spyder
 
 然后再出现的Y/s中选择Y。
 
-4.遇到问题：输入conda时显示 command not found。
+### 4. 输入conda时显示command not found。
 
 解决办法：
 
