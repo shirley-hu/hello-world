@@ -45,6 +45,14 @@ pip install 安装包名字  -i http://pypi.doubanio.com/simple/ --trusted-hos
 对应到我们这里要安装tensorflow便是：
 pip install tensorflow  -i http://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com
 
+使用镜像网站吧，这次使用清华的：给anaconda添加该镜像网站：
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --set show_channel_urls yes
+可以输入2次
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+这样该网站就置顶了
+————————————————
 版权声明：本文为CSDN博主「weixin_42001089」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_42001089/article/details/84403842版权声明：本文为CSDN博主「weixin_42001089」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/weixin_42001089/article/details/84403842
 
